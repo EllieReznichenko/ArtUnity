@@ -29,7 +29,7 @@
     <script type="module" crossorigin src="/ArtUnity/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ArtUnity/assets/vendor-BuJqGh_H.js">
     <link rel="stylesheet" crossorigin href="/ArtUnity/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/ArtUnity/assets/index-C6fOF8W8.css">
+    <link rel="stylesheet" crossorigin href="/ArtUnity/assets/index-CzmEiuYJ.css">
   </head>
   <body>
     <header class="header">
@@ -261,15 +261,14 @@
   </div>
 </footer>
 
-    <div class="artist-list">
-  <div class="artist-card" data-id="">U2</div>
-  <div class="artist-card" data-id="">Queen</div>
-</div>
+    <ul class="artists-grid" id="artists-grid">
+  <!-- JavaScript вставлятиме сюди картки артистів -->
+</ul>
 
-<div class="modal">
+<div class="modal" id="artist-modal">
   <div class="modal-content"></div>
-  <div class="loader">...</div>
 </div>
+<div class="loader" style="display: none">Loading...</div>
 
 
   </body>
