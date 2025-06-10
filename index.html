@@ -29,7 +29,7 @@
     <script type="module" crossorigin src="/ArtUnity/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ArtUnity/assets/vendor-BuJqGh_H.js">
     <link rel="stylesheet" crossorigin href="/ArtUnity/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/ArtUnity/assets/index-RJd9jgGe.css">
+    <link rel="stylesheet" crossorigin href="/ArtUnity/assets/index-Cal1a8Gv.css">
   </head>
   <body>
     <header class="header">
@@ -221,9 +221,13 @@
         </svg>
       </div>
       <div class="swiper-scrollbar"></div>
+      <button class="feedback-modal-btn" type="button" data-feedback-modal-open>
+        Leave feedback
+      </button>
     </div>
   </div>
 </section>
+
 
     </main>
 
@@ -301,6 +305,59 @@
   <div class="modal-content"></div>
 </div>
 <div class="loader" style="display: none"></div>
+
+    <div class="feedback-modal-overlay is-hidden" data-feedback-modal>
+  <div class="feedback-modal-window">
+    <button
+      type="button"
+      class="feedback-modal-close"
+      data-feedback-modal-close
+      aria-label="Close modal"
+    >
+      <svg
+        class="feedback-modal-close-icon"
+        width="16"
+        height="15"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <use href="/ArtUnity/assets/sprite-DkNmmkW8.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="feedback-modal-title">Submit feedback</h2>
+    <form class="feedback-modal-form" novalidate>
+      <ul class="feedback-modal-list">
+        <li class="feedback-modal-item">
+          <label for="user-name" class="feedback-modal-label">Name</label>
+          <input
+            id="user-name"
+            type="text"
+            class="feedback-modal-input"
+            name="user-name"
+            placeholder="Emily"
+            minlength="2"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+        </li>
+        <li class="feedback-modal-item">
+          <label for="user-message" class="feedback-modal-label">Message</label>
+          <textarea
+            id="user-message"
+            type="text"
+            class="feedback-modal-input feedback-modal-input-tex"
+            name="user-message"
+            placeholder="Type your message..."
+            rows="3"
+            required
+          ></textarea>
+        </li>
+      </ul>
+      <div class="feedback-modal-stars" id="feedback-star-rating"></div>
+      <button type="submit" class="feedback-modal-submit">Submit</button>
+    </form>
+  </div>
+</div>
 
 
   </body>
