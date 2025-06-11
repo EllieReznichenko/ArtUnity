@@ -37,7 +37,7 @@ import{a as A,S as N,N as O,P as j,R as H}from"./assets/vendor-BuJqGh_H.js";(fun
     <div class="modal-header">
       <h2 class="artist-mod-title">${e.name}</h2>
       <button class="button-close" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="artist-modal-close-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
@@ -56,8 +56,11 @@ import{a as A,S as N,N as O,P as j,R as H}from"./assets/vendor-BuJqGh_H.js";(fun
             <div class="info-block"><span class="info-label">Country</span><span class="info-value">${e.country||"information missing"}</span></div>
           </div>
         </div>
-        <p class="biography"><strong>Biography</strong> ${e.biography||"information missing"}</p>
-        <div class="genres"><strong>Genres</strong> ${s}</div>
+        <strong>Biography</strong>
+        <p class="biography">
+  ${e.biography||"information missing"}
+</p>
+        <div class="genres genres-artist"><strong>Genres</strong> ${s}</div>
       </div>
     </div>
     <div class="albums">
