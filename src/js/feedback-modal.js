@@ -30,6 +30,13 @@ if (modal && form && starsContainer) {
     }
   });
 
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !modal.classList.contains('is-hidden')) {
+      modal.classList.add('is-hidden');
+      unlockBodyScroll();
+    }
+  });
+
   let currentRating = 0;
 
   function renderStars(rating) {
